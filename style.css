@@ -1,3 +1,7 @@
+body {
+    background-color: whitesmoke;
+}
+
 header {
     background-color: #1DA1F2;
     padding: 0;
@@ -42,9 +46,29 @@ li, h1 {
     margin-right: 24px;
 }
 
-a:link { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+.navitem.navlink.active {
+    border-bottom: 3px solid #1DA1F2;
+}
+
+li.navitem:hover a {
+    color: #1DA1F2;
+}
+
+a:link { 
+    text-decoration: none;
+    color: white; 
+}
+
+a:hover { 
+    text-decoration: none; 
+    color: white;
+}
+
+a:active { 
+    text-decoration: none; 
+    color: white;
+}
+
 a:visited { 
     text-decoration: none;
     color: white;     
@@ -52,4 +76,36 @@ a:visited {
 
 .navbar {
     background-color: white;
+}
+
+input#navbar-search-input {
+    background-color: #eeeeee;
+    border: 1px solid #dbdadc;
+    padding: 3px;
+}
+
+button#navbar-search-button {
+    background-color: white;
+    border: none;
+    color: #3a3a3a;
+}
+
+main.twit-container {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 120px;
+    width: 70%;
+    left: 21%;
+}
+
+.twit {
+    background-color: white;
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #dbdadc;
+    align-self: center;
+    flex-basis: 25%;
 }
