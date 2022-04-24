@@ -13,6 +13,12 @@ header {
     height: 100px;
 }
 
+a {
+    color: black;
+    font-family: 'Roboto';
+    text-decoration: none;
+}
+
 .site-title {
     margin-left: 10px;
 }
@@ -54,22 +60,22 @@ li.navitem:hover a {
     color: #1DA1F2;
 }
 
-a:link { 
+a:link .site-title { 
     text-decoration: none;
     color: white; 
 }
 
-a:hover { 
+a:hover .site-title { 
     text-decoration: none; 
     color: white;
 }
 
-a:active { 
+a:active .site-title { 
     text-decoration: none; 
     color: white;
 }
 
-a:visited { 
+a:visited .site-title { 
     text-decoration: none;
     color: white;     
 }
@@ -82,6 +88,7 @@ input#navbar-search-input {
     background-color: #eeeeee;
     border: 1px solid #dbdadc;
     padding: 3px;
+    margin-right: 2px;
 }
 
 button#navbar-search-button {
@@ -108,4 +115,20 @@ main.twit-container {
     border: 1px solid #dbdadc;
     align-self: center;
     flex-basis: 25%;
+}
+
+.twit-icon {
+    padding-top: 18px;
+    margin: 0 5px 0 5px;
+}
+
+.twit-content p.twit-text {
+    font-family: 'Roboto';
+    margin-right: 35px;
+}
+
+.twit-author a {
+    font-weight: bold;
+    float: right;
+    margin: 0 20px 20px 0;
 }
