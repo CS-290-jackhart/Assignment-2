@@ -21,6 +21,7 @@ a {
 
 .site-title {
     margin-left: 10px;
+    font-weight: lighter;
 }
 
 li, h1 {
@@ -35,7 +36,6 @@ li, h1 {
 .navbar li a {
     color: black;
     padding: 0 10px 0 10px;
-    font-weight: light;
     font-size: 16pt;
     
 }
@@ -73,6 +73,7 @@ a:hover .site-title {
 a:active .site-title { 
     text-decoration: none; 
     color: white;
+    font-weight: light;
 }
 
 a:visited .site-title { 
@@ -104,22 +105,29 @@ main.twit-container {
     align-items: center;
     flex-wrap: wrap;
     top: 120px;
-    width: 70%;
-    left: 21%;
+    max-width: 1500px;
+    left: 17%;
 }
 
-.twit {
+article.twit {
     background-color: white;
     display: flex;
-    margin: 10px 10px 10px 10px;
+    margin: 2px;
     border: 1px solid #dbdadc;
     align-self: center;
     flex-basis: 25%;
+    min-width: 425px;
+    max-width: 425px;
 }
 
 .twit-icon {
     padding-top: 18px;
     margin: 0 5px 0 5px;
+}
+
+div.twit-content {
+    width: 100%;
+    min-height: 110px;
 }
 
 .twit-content p.twit-text {
@@ -131,4 +139,52 @@ main.twit-container {
     font-weight: bold;
     float: right;
     margin: 0 20px 20px 0;
+}
+
+.twit-author a:hover {
+    color: #1DA1F2;
+}
+
+button#create-twit-button {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+}
+
+button#navbar-search-button:hover {
+    color: #1DA1F2;
+    cursor: pointer;
+}
+
+button#create-twit-button:hover {
+    background-color: #1DA1F2;
+    cursor: pointer;
+}
+
+@media (max-width: 1432px) {
+    .twit {
+        flex-basis: 40%;
+    }
+
+    div.twit-content {
+        min-height: 130px;
+    }
+
+    article.twit {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1921px) {
+    main.twit-container {
+        left: 20%;
+    }
 }
